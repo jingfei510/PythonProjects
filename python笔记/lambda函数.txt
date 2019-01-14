@@ -1,0 +1,64 @@
+ def f(x,y):
+   ...:     return x+y
+   ...:
+
+In [9]: reduce(f,[1,2,3,4,5])
+Out[9]: 15
+
+lambdaº¯Êý
+
+
+
+In [10]: reduce(f,(1,2,3,4,5))
+Out[10]: 15
+
+In [11]: lambda x,y:x+y
+Out[11]: <function __main__.<lambda>>
+
+In [12]: f = lambda x,y:x+y
+
+In [13]: f(2,3)
+Out[13]: 5
+
+In [14]: reduce(lambda x,y:x+y,[1,2,3,4])
+Out[14]: 10
+
+In [15]: foo = [2,18,9]
+
+
+In [19]: print (reduce(lambda x,y:x+y,foo))
+29
+
+In [20]: print(map(lambda x:x*2+10,foo))
+<map object at 0x012C9250>
+
+In [21]: print(*map(lambda x:x*2+10,foo))
+14 46 28
+
+In [22]: print (filter(lambda x:x % 3 ==0,foo))
+<filter object at 0x012C9210>
+
+In [23]: print (*filter(lambda x:x % 3 ==0,foo))
+18 9
+
+
+±éÀú£º
+In [49]: for x in foo:
+    ...:     x = x*2+10
+    ...:     print(x)
+    ...:
+14
+28
+46
+
+In [50]: for x in foo:
+    ...:     if x%3==0:
+    ...:         print(x)
+    ...:
+9
+18
+
+
+
+
+

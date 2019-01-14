@@ -1,0 +1,45 @@
+集合：
+In [77]: y = frozenset('hello world')   #不可变集合
+
+In [78]: y
+Out[78]: frozenset({' ', 'd', 'e', 'h', 'l', 'o', 'r', 'w'})
+
+In [79]: z = set(['azwpp'])  #可变集合
+
+In [80]: z
+Out[80]: {'azwpp'}
+
+In [81]: z = frozenset('azwpp')
+
+In [82]: z
+Out[82]: frozenset({'a', 'p', 'w', 'z'})
+
+In [83]: z = set(['azwpp'])
+
+In [84]: x|z
+Out[84]: {0, 1, 2, 3, 5, 'azwpp'}
+
+In [85]: z|x
+Out[85]: {0, 1, 2, 3, 5, 'azwpp'}
+
+In [86]: x -z
+Out[86]: {0, 1, 2, 3, 5}
+
+In [87]: z-y
+Out[87]: {'azwpp'}
+
+In [88]: y = set(['a'])
+
+In [89]: z
+Out[89]: {'azwpp'}
+
+In [90]: z-y
+Out[90]: {'azwpp'}
+
+In [91]: z=set(['a','b'])
+
+In [92]: z
+Out[92]: {'a', 'b'}
+
+In [93]: z-y
+Out[93]: {'b'}

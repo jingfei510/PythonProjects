@@ -1,0 +1,41 @@
+模块：
+import  模块名字 as 别名
+from 模块名 import 函数/类名     不用模块名.类名
+
+同一目录下写入模块，另一个中可以导入模块
+
+
+dir(module)  #模块查看
+
+
+import imp
+imp.reload(模块)   #写个个代码吧模块内部变了，需要模块重载
+
+
+模块位置
+import sys
+sys.path
+
+
+直接运行模块时候需要判断
+if __name__=="__main__":
+#此时运行的时模块自己。在调用时候不会出现。因为调用时候__name__="模块文件名字"
+
+
+包
+
+__init__.py   #在包里面必须加入这个
+
+from 包 import 模块
+from包.包 import 模块    #内部包
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+一；python制作桃心
+
+ 
+from turtle import*
+ pensize(1)
+ pencolor('red')
+ fillcolor('pink')
+ speed(5)
+ up()
+ goto(-30,100)
+ down()
+ begin_fill()
+ left(90)
+ circle(120,180)
+ circle(360,70)
+ left(38)
+ circle(360,70)
+ circle(120,180)
+ end_fill()
+ up()
+ goto(-100,-100)
+ down()
+
+
+
+
+二；玫瑰
+
+
+import turtle
+
+turtle.penup()
+turtle.left(90)
+turtle.fd(200)
+turtle.pendown()
+turtle.right(90)
+
+
+turtle.fillcolor("red")
+turtle.begin_fill()
+turtle.circle(10,180)
+turtle.circle(25,110)
+turtle.left(50)
+turtle.circle(60,45)
+turtle.circle(20,170)
+turtle.right(24)
+turtle.fd(30)
+turtle.left(10)
+turtle.circle(30,110)
+turtle.fd(20)
+turtle.left(40)
+turtle.circle(90,70)
+turtle.circle(30,150)
+turtle.right(30)
+turtle.fd(15)
+turtle.circle(80,90)
+turtle.left(15)
+turtle.fd(45)
+turtle.right(165)
+turtle.fd(20)
+turtle.left(155)
+turtle.circle(150,80)
+turtle.left(50)
+turtle.circle(150,90)
+turtle.end_fill()
+ 
+turtle.left(150)
+turtle.circle(-90,70)
+turtle.left(20)
+turtle.circle(75,105)
+turtle.setheading(60)
+turtle.circle(80,98)
+turtle.circle(-90,40)
+
+
+turtle.left(180)
+turtle.circle(90,40)
+turtle.circle(-80,98)
+turtle.setheading(-83)
+
+
+turtle.fd(30)
+turtle.left(90)
+turtle.fd(25)
+turtle.left(45)
+turtle.fillcolor("green")
+turtle.begin_fill()
+turtle.circle(-80,90)
+turtle.right(90)
+turtle.circle(-80,90)
+turtle.end_fill()
+ 
+turtle.right(135)
+turtle.fd(60)
+turtle.left(180)
+turtle.fd(85)
+turtle.left(90)
+turtle.fd(80)
+ 
+
+turtle.right(90)
+turtle.right(45)
+turtle.fillcolor("green")
+turtle.begin_fill()
+turtle.circle(80,90)
+turtle.left(90)
+turtle.circle(80,90)
+turtle.end_fill()
+ 
+turtle.left(135)
+turtle.fd(60)
+turtle.left(180)
+turtle.fd(60)
+turtle.right(90)
+turtle.circle(200,60)
+
+
+三：循环画圆环
+import turtle
+t = turtle.Pen()
+for x in range(100):
+　  t.circle(x) 
+　  t.left(91)
+
+
+
+四：旋转正方形
+import turtle
+t = turtle.Pen()
+t.pencolor(“red”)
+for x in range(100):
+    t.forward(x)
+    t.left(91
+)
+
+加颜色
+colors = ["red","yellow","blue","green"]
+
+ for x in range(200):
+ t.pencolor(colors[x%4])
+ t.forward(x)
+ t.left(91)
+
+
+
+

@@ -1,0 +1,41 @@
+a = input('input string')
+if a == '+':
+    print("++++++++")
+elif a == '-':
+    print("------")
+else:
+    print("erro")
+
+
+
+a = input('input age')
+n = input ("input weight")
+if a >= '18' and n >='60':
+    print("ok")
+else:
+    print("no")
+
+
+
+bool值 ，输入就是真，没输入就是假
+a = input('input string\n')
+if a:
+#if not a:
+   
+    print("yes\n")
+else :
+    print("no\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+

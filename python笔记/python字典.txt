@@ -1,0 +1,23 @@
+字典：
+In [2]: player = {'name':'jf','hp':100}
+
+In [3]: player
+Out[3]: {'hp': 100, 'name': 'jf'}
+
+In [4]: player['name']
+Out[4]: 'jf'
+
+In [5]: player['hp']
+Out[5]: 100
+
+删除字典和字典元素：
+x = {'name':'mloo','hp':100,'money':999}
+ del x['name']   #删除键为‘name’的条目
+x,clear()  #删除x中所有条目
+del x    #删除整个x字典
+x.pop('name')   # 删除并返回键为‘name’的条目
+
+
+   
+
+

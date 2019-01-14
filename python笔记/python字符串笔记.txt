@@ -1,0 +1,87 @@
+字符串索引
+>>> say1 = 'there are %d bird in the %s !'
+>>> say1
+'there are %d bird in the %s !'
+>>> say1 % (3,'tree')
+'there are 3 bird in the tree !'
+>>> print(say1 % (10,'water'))
+there are 10 bird in the water !
+>>> n = (8,'sky')
+>>> print(say1 % n)
+there are 8 bird in the sky !
+>>> print(say1% n)
+there are 8 bird in the sky !
+>>> print(say1%n)
+there are 8 bird in the sky !
+
+
+
+str用法
+>>> say1
+'there are %d bird in the %s !'
+>>> say1.capitalize()
+'There are %d bird in the %s !'
+>>> say1.count('e')   //第一个‘e’的位置
+4
+>>> s2.find('hello')
+0
+>>> s2.find('world')
+6
+>>> s2[6:11]
+'world'
+>>> ip = '192.163.1.123'
+>>> ip1 = '192.163.1.12'
+>>> ip2 = '192.163.1.1'
+>>> ip.split('.')
+['192', '163', '1', '123']
+>>> ip.split('.')[-1]
+'123'
+>>> ip8 = ip.split('.')
+>>> ip8
+['192', '163', '1', '123']
+>>> '.'.join(ip8)
+'192.163.1.123'
+>>> '+++'.join(ip8)
+'192+++163+++1+++123'
+
+
+
+
+
+
+用户输入一串字符，从字符串中拼接firend单词。
+>>> s1 = input()
+fokrokoiesaafenlasadkxakq
+
+>>> s1.find('f')
+0
+>>> s1.find('r')
+3
+>>> s1.find('i')
+7
+>>> s1.find('e')
+8
+>>> s1.find('n')
+14
+>>> s1.find('d')
+19
+>>> s1[0],s1[3],s1[7],s1[8],s1[14],s1[19]//不加括号默认园括号
+('f', 'r', 'i', 'e', 'n', 'd') // 园括号不能用join拼接。
+>>> [s1[0],s1[3],s1[7],s1[8],s1[14],s1[19]]//**需要加方括号才能拼接
+['f', 'r', 'i', 'e', 'n', 'd']
+>>> yes = [s1[0],s1[3],s1[7],s1[8],s1[14],s1[19]]
+>>> ''.join(yes)
+'friend'
+
+
+
+
+help（str）可以查找string功能
+
+
+
+
+
+
+
+

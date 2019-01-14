@@ -1,0 +1,176 @@
+定义函数：
+def functionName（paramenter1，parameter2）：   #名字第二个字母首字母大写
+    ‘’‘注释’‘’
+    statement1
+    statement2
+    
+
+    return valueToReturn
+
+
+
+例如：
+**************************
+def apple(hp):
+    return hp+=10
+
+
+
+def bomb(hp):
+    return hp-=10
+
+
+
+def boss(hp):
+    return attack+=20
+
+***************************
+
+
+
+def定义函数，返回值可以为任意类型。
+return返回后，之后的代码不执行。
+
+
+In [44]: def f():
+    ...:     global a   #强制a为全局变量。如果没有，外面的a和函数里的a不是同一个，相互不影响。
+    ...:     a = 10
+    ...:     print(a)
+    ...:
+
+In [46]: a = 99
+
+In [47]: a
+Out[47]: 99
+
+In [48]: f()
+10
+
+In [49]: a
+Out[49]: 10
+
+
+
+def  mathe（x, y)    #x,y称为形式参数，当xy赋值了后，变为实际参数，，。。如果初始xy的值，则称为初始参数。def  ma（x，y='哈哈'）
+
+
+
+初始传值只能从后面传，先传y，后传x。
+访问mathe（5），这样时候5是从左向右，即x = 5
+
+
+
+
+
+
+In [25]: lis = [5,'巧克力']
+
+In [26]: d = {'x':5,'y':'巧克力'}
+
+In [27]: def ma(x,y):
+    ...:     print("制作一个%d元的%s的冰淇淋"%(x,y))
+    ...:
+    ...:
+    ...:
+
+
+In [29]: ma(*lis)
+制作一个5元的巧克力的冰淇淋
+
+In [30]: ma(**d)
+制作一个5元的巧克力的冰淇淋
+
+
+
+
+
+In [37]: def ma(x,y,*list1,**dict1):   # *list1是存多余的元组值，**dict1是存多余的字典值。
+    ...:     print("制作一个%d元的%s的冰淇淋"%(x,y))
+    ...:     print('list1:',list1)
+    ...:     print('dict1:',dict1)
+    ...:
+    ...:
+    ...:
+
+In [38]: ma(1,2,3,4)
+制作一个1元的2的冰淇淋
+list1: (3, 4)   #多余的值
+dict1: {}
+
+In [39]: ma(1,2,3,z = 4)
+制作一个1元的2的冰淇淋
+list1: (3,)   #多余的值
+dict1: {'z': 4}   #多余的值
+
+
+In [42]: ma(y = '圣代',x = 7,z = 5)
+制作一个7元的圣代的冰淇淋
+list1: ()
+dict1: {'z': 5}  #多余的值。
+
+
+
+
+python内置函数：
+
+len()
+divmod()
+pow()
+round()
+abs()
+
+max()
+min()
+isinstance()
+callable()
+range()
+
+
+type（）
+int（）
+float（）
+complex（）  #复数
+str（）
+list（）
+tuple（）
+hex（）#进制转换
+oct（）
+
+chr()
+ord()   #随机验证码
+
+
+string内建方法和模块：
+
+str.capitalize()    #首字母大写
+str.replace()
+str.split()   #拆分
+str.strip()
+'+++'.join(x)   #拼接
+
+
+list内建方法：
+
+l.index()    # 查找
+l.sort()   #排序
+l.append(object)  #增加
+l.inset(index,object)  #增减到index这一位上。
+
+l.remove(value)   #删除
+l.pop(index)     #输出这个被删除的值。
+
+
+字典内建方法
+字典key值：dict9.keys（）
+字典值：dict9.values（）
+字典所有项：dict9.items（）
+返回字典值：dict9.get（‘y’）
+
+
+
+
+
+
+
+
+
